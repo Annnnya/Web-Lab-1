@@ -324,11 +324,30 @@ button.righmost-navigate-button {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
   }
   
   .offers-tab {
-    margin: 0 20px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #666666;
+    transition: all 0.3s ease;
   }
+  
+  .offers-tab:hover,
+  .offers-tab.active {
+    color: #ffffff;
+    background: #3E86F5;
+    border-radius: 10px;
+  }
+  
 
 
 .offers-main {
@@ -337,44 +356,64 @@ button.righmost-navigate-button {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: white;
-  }
-  
+    position: relative;
+}
   .offer-box {
     width: 30%;
     padding: 20px;
     margin-bottom: 30px;
     border: 2px solid rgba(172, 172, 172, 0.5);
     border-radius: 25px;
-    overflow: hidden;
+    overflow:hidden;
     background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  .offer-box:hover{
+    transform: scale(1.05);
   }
   
   .offer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     position: relative;
+    margin-right: 5%;
   }
   
   .offer-img {
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
+    /* margin-right: 100%; */
+    float: left;
   }
   
   .offer-date {
-    transform: rotate(90deg);
-    position: relative;
     display: flex;
-    justify-self: flex-end;
-    align-self: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 5px 10px;
-    border-radius: 10px;
+    /* width: 80px;
+    height: 80px; */
+    width: 191px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 3%;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    flex-grow: 3;
+    position: absolute;
+    right: -47%;
+    top: 55%;
   }
   
   .offer-info {
     padding: 20px;
   }
   
-  .offer-tag-relax, .offer-tag-adventure {
+  .offer-tag-relax,
+  .offer-tag-adventure {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 15px;
@@ -385,18 +424,20 @@ button.righmost-navigate-button {
   }
   
   .offer-tag-relax {
-    background-color: #e9f2f9;
-    color: #1e91cf;
+    background-color: #FCDDEC;
+    color: #F178B6;
+    ;
   }
   
   .offer-tag-adventure {
-    background-color: #e8f5e9;
-    color: #2e7d32;
+    background-color: #F1F1FD;
+    color: #7879F1;
   }
   
   .offer-duration {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 21px;
     font-weight: 500;
   }
   
@@ -417,10 +458,10 @@ button.righmost-navigate-button {
   }
   
   .offer-book-now {
-    background-color: #3e86f5;
-    color: white;
+    background-color: #F2F6FF;
+    color: #3E86F5;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
@@ -432,8 +473,6 @@ button.righmost-navigate-button {
     background-color: #2b5dc6;
   }
   
-
-
 
 /* travel with us */
 
@@ -523,7 +562,7 @@ button.righmost-navigate-button {
 
 /* destinations */
 .destinations {
-    padding: 4rem 2rem;
+    padding: 4% 1%;
   }
   
   .destinationss-header {
@@ -552,8 +591,9 @@ button.righmost-navigate-button {
   
   .deatinations-tab:hover,
   .deatinations-tab.active {
-    background-color: #1e90ff;
-    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: #1e90ff;
+    background-color: white;
   }
   
   .deatinations-articles {
@@ -563,10 +603,21 @@ button.righmost-navigate-button {
     align-items: center;
     flex-wrap: wrap;
   }
-
+  .destination-rating {
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    background-color: #FFFFFF;
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+  }
   .destination-box {
-    width: 23%;
-    margin: 1.5rem;
+    position: relative;
+    width: 20%;
+    margin: 0.5rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -582,16 +633,12 @@ button.righmost-navigate-button {
   }
   
   .destination-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    position: relative;
+    width: 100%;    
+    height: 80%;
+    object-fit: contain;
     object-position: center;
-  }
-  
-  .destination-rating {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
+    z-index: 0;
   }
   
   .star-icon {
@@ -603,7 +650,7 @@ button.righmost-navigate-button {
   .rating-num {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #777;
+    color: black;
     margin-left: 0.5rem;
   }
   
@@ -762,9 +809,10 @@ button.righmost-navigate-button {
   }
   
   .register-background {
-    width: 100%;
+    width: 90%;
     display: block;
     border-radius: 20px;
+    margin: 0 auto;
   }
   
   .register.content {
@@ -784,11 +832,13 @@ button.righmost-navigate-button {
   }
   
   .register-button {
+    background: #FFFFFF;
+    border-radius: 25px;
     margin-top: 30px;
     padding: 10px 30px;
-    background-color: #fff;
+    width: 220px;
+    height: 80px;
     color: #0066ff;
-    border-radius: 30px;
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -797,28 +847,29 @@ button.righmost-navigate-button {
   
 
 /* footer */
-
-.page_footer{
+.page_footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-end;
-}
-
-  .footer-text {
+    padding: 20px 5%;
+    }
+    
+    .footer-text {
     font-weight: 500;
     font-size: 20px;
     line-height: 42px;
     color: rgba(0, 0, 0, 0.5);
-    align-self: baseline;
-  }
-  
-  .footer-nav {
+    text-align: left;
+    }
+    
+    .footer-nav {
     display: flex;
     justify-content: flex-end;
-  }
-  
-  
-  .footer-nav button {
+    align-items: center;
+    }
+    
+    .footer-nav button {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -829,5 +880,4 @@ button.righmost-navigate-button {
     flex: none;
     order: 0;
     flex-grow: 0;
-  }
-  
+    }
