@@ -5,17 +5,24 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Travel website</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <style>
+          body {
+            font-family: 'Poppins', sans-serif;
+          }
+        </style>
     </head>
 
     <body>
 
-        <header style="display: flex; justify-content: space-between; align-items: center;">
+        <header>
 
-            <span class="header-logo" style="display: inline-block;">
+            <span class="header-logo" style="display: inline-flex;">
                 Treloo
             </span>
 
-            <nav class="header-nav" style="display: inline-flex; justify-content: flex-end;">
+            <nav class="header-nav">
                 <button onclick="window.location.href='https://';" style="background-color: transparent; border: none; color: black; display: inline-block;">
                     Review
                 </button>
@@ -28,16 +35,16 @@
                 <button onclick="window.location.href='https://';" style="background-color: transparent; border: none; color: black; display: inline-block;">
                     Blog
                 </button>
-                <button onclick="window.location.href='https://';" style="background-color: transparent; border: none; color: black; display: inline-block;">
+                <button onclick="window.location.href='https://';" class="righmost-navigate-button">
                     Blog
                 </button>
             </nav>
 
         </header>
 
-        <img class="background-img" src=".\images\pexels-francesco-ungaro-2835436 1.png" alt="Background image">
 
         <main class="main">
+          <img class="background-img" src=".\images\pexels-francesco-ungaro-2835436 1.png" alt="Background image">
 
             <section class="banner">
                 <h1 class="banner-header">
@@ -62,6 +69,7 @@
                 </header>
 
                 <main class="flight-booking">
+
                   <div class="booking-box">
                     <div class="departure">
                       <label class="booking-label">Leaving from
@@ -90,8 +98,10 @@
                   <div class="booking-box">
                     <div class="departure-date">
                       <label class="booking-label">
+                        <div class="word-image">
                         Leave
                         <img class="plane-icon" src=".\icons\Airplane Mode On.png" alt="Plane leaving">
+                        </div>
                         <input type="date" 
                         id="date" 
                         min="2022-01-01" 
@@ -102,8 +112,10 @@
                     <img class="date-icon" src=".\icons\Planner.png" alt="Date icon">
                     <div class="arrival-date">
                       <label class="booking-label">
+                        <div class="word-image">
                         Return
                         <img class="plane-icon rotate180" src=".\icons\Airplane Mode On.png" alt="Plane arriving">
+                        </div>
                         <input type="date" 
                         id="date" 
                         min="2022-01-01" 
@@ -113,7 +125,7 @@
                     </div>
                   </div>
                   <button class="fligt-search-button">
-                    <img class="booking-search-icon" src="./icons/icons8-search.svg" alt="Search icon">
+                    <img class="booking-search-icon" src="./icons/icons8-search.svg" alt="Search">
                   </button>
                 </main>
               </section>
@@ -127,6 +139,8 @@
                         <div class="offers-tab">Couple</div>
                         <div class="offers-tab">Family</div>
                     </div>
+
+                    <section class="article-row">
 
                     <article class="offer-box">
                         <main class="offer-content">
@@ -170,6 +184,8 @@
                           <button class="offer-book-now">Book Now</button>
                         </footer>
                       </article>
+
+                    </section>
 
                 </main>
               </section>
