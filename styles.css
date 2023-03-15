@@ -432,3 +432,402 @@ button.righmost-navigate-button {
     background-color: #2b5dc6;
   }
   
+
+
+
+/* travel with us */
+
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .text-contact-us {
+    flex-basis: 50%;
+  }
+  
+  .contact-header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-button {
+    background-color: #3e86f5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #2b5dc6;
+  }
+  
+  .contact-us-image-division {
+    position: relative;
+    flex-basis: 40%;
+    margin-left: 50px;
+  }
+  
+  .contact-us-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+  
+  .floating-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+  .floating-text-box-num {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    margin-bottom: 10px;
+  }
+  
+  .floating-text-box-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  
+
+
+
+/* destinations */
+.destinations {
+    padding: 4rem 2rem;
+  }
+  
+  .destinationss-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .deatinations-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .deatinations-tab {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: #777;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deatinations-tab:hover,
+  .deatinations-tab.active {
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .deatinations-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .destination-box {
+    width: 23%;
+    margin: 1.5rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .destination-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .destination-content {
+    padding: 1rem;
+  }
+  
+  .destination-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .destination-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .star-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  .rating-num {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #777;
+    margin-left: 0.5rem;
+  }
+  
+  .destination-content p {
+    margin: 0.5rem 0;
+  }
+  
+  .location-pin-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+
+
+
+
+
+/* reviews */
+
+.reviews {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reviews-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .review-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-main {
+    text-align: center;
+    position: relative;
+  }
+  
+  .qoutes-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+  }
+  
+  .review-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .review-author-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .review-treloo-text {
+    font-size: 14px;
+  }
+  
+  .rewiev-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .review-author-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .reviewer-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-icon {
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .rating-num {
+    font-size: 16px;
+  }
+  
+  .reviws-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  
+  .reviews-back-button, .reviews-forward-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .reviews-back-button:focus, .reviews-forward-button:focus {
+    outline: none;
+  }
+  
+  .reviews-forward-button-icon {
+    height: 30px;
+    transform: rotateY(180deg);
+  }
+
+  .reviews-back-button-icon {
+    height: 30px;
+  }
+  
+  .reviews-back-button {
+    margin-right: 20px;
+  }
+  
+  .review-author-img-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .review-author-img-container .star-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 15px;
+  }
+
+
+
+
+  /* register today */
+  .register-slogan {
+    margin: 50px 0;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .register-background {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .register.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+  }
+  
+  .register-header {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .register-button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #0066ff;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+/* footer */
+
+.page_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+  .footer-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.5);
+    align-self: baseline;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .footer-nav button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.75);
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
